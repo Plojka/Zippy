@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700&display=swap');
+
+// mixins
+@mixin font-mon {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+@mixin font-h-mon {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 44.21px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+@mixin font-rob {
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+}
+
+@mixin link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@mixin button {
+    background: #ffe26d;
+    border-radius: 5px;
+    color: #000000;
+    padding: 15px 25px;
+}
+
+@mixin button-project {
+    background: #ffffff;
+    border-radius: 5px;
+    color: #000000;
+    padding: 15px 25px;
+}
+
+// document
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+// header
+.header {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-auto-rows: minmax(100px, auto);
+    background: url("../scss/head.jpg") no-repeat;
+    background-size: cover; 
+    height: 693px;
+    justify-items: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-auto-rows: minmax(100px, auto);
+    padding-top: 35px;
+}
+
+.logo { 
+    .logo-text {
+        @include font-mon;
+        color: white;
+        font-size: 29.47px;
+        letter-spacing: -3px;
+    }
+}
+
+.nav-bar {
+    padding-top: 10px;
+    .items-nav-bar {
+        @include font-mon;
+        display: inline-block;
+        font-size: 10.32px;
+        padding-left: 35px;
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        a:hover {
+            color: #ffe26d;
+        }
+    }
+}
+
+.text {
+    grid-column: 1/3;
+    color: #ffffff;
+    h1 {
+        @include font-mon;
+        font-size: 40.69px;
+    }
+    p {
+        @include font-rob;
+        font-size: 19.16px;
+        font-weight: lighter;
+        padding-top: 35px;
+    }
+}
+
+.button {
+    .button-list {
+        text-decoration: none;
+        .button-couple {
+            @include button;
+        }
+        .button-couple:hover {
+            background: #62497c;
+            color: #ffffff;
+        }
+    }
+}
+
+// main
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: minmax(30px, auto);
+    justify-items: center;
+    background: #fefefe;
+
+    .welcome {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-auto-rows: minmax(100px, auto);
+        grid-column: 2/3;
+        border-bottom: 2px solid #e7e7e7;
+        width: 90%;
+
+        .welcome-text {
+            grid-column: 1/6;
+            @include font-h-mon;
+        }
+        
+        .umbrella {
+            grid-column: 1/3;
+            grid-row: 2/3;
+            padding-top: 90px;
+        
+                .text-umbrella {
+                    @include font-rob;
+                    font-size: 29.47px;
+                    letter-spacing: 9px;
+                }
+        }
+        .icone-umbrella {
+            grid-column: 3/6;
+            grid-row: 2/3;
+            padding-top: 60px;
+        
+                .img-umbrella {
+                    width: 187px;
+                    height: 195px;    
+                }
+        }
+    }
+}
+
+.icones {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 110px;
+    grid-column: 1/6;
+    padding: 60px 0;
+
+    .bell {
+        @include font-rob;
+        font-size: 13.26px;
+        line-height: 23.58px;
+        color: #a8a8a8;
+        text-align: center; 
+        
+        .list-icones > li{
+            list-style: none;
+            padding-top: 30px;
+        }
+    
+        .text-h-item {
+            @include font-mon;
+            font-size: 14.74px;
+            color: #62497c;
+            text-align: center;
+        }
+    
+    }  
+}
+
+// PROJECT
+.project{    
+    h1 {
+        @include font-h-mon;  
+    }
+
+    .project-item {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-auto-rows: minmax(100px, auto);
+        margin: 40px 0 40px 0;
+        background: #efefef;
+        justify-content: center;
+
+        .project-iamges {
+            @include font-rob;
+            font-size: 13.26px;
+            line-height: 23.58px;
+            color: #a8a8a8;      
+
+            .text-project {
+                text-align: center;
+                padding: 40px 0 40px 0;
+
+                .text-project:hover {
+                    background: #ffe26d;
+                }
+                .text-h-project {
+                    @include font-mon;
+                    font-size: 14.74px;
+                    color: black;
+                    padding-bottom: 10px;
+                }
+                .button-project {
+                    padding-top: 10px;
+
+                    .button-list-project {
+                        text-decoration: none;
+
+                        .button-couple-project {
+                            @include button-project;
+                            @include font-mon;
+                            font-size: 10.32px;
+                        }
+                        .button-couple-project:hover {
+                            background: #62497c;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }    
+        }
+    }      
+}
+
+//price
+.pricing-table {
+    text-align: center;
+    padding: 60px 0;
+    
+    h1 {
+        @include font-mon;
+        font-size: 44.21px;
+        color: #000000;
+    }
+    .price {
+        display: inline-block;
+        padding: 60px 50px;
+
+        .standard-box {
+            @include font-rob;
+            font-size: 10.32px;
+            line-height: 22.1px;
+            color: #000000;
+            text-align: center;
+            
+            .standard-list > li {
+                list-style: none;
+                padding-top: 30px;
+            }
+
+            .standard-h-tree-item {
+                @include font-mon;
+                font-size: 14.74px;
+                color: #000000;
+                text-align: center;
+            }
+
+            .standard-h-four-item {
+                @include font-mon;
+                font-size: 14.74px;
+                color: #bababa;
+            }
+
+            .standard-button {
+                
+                .standard-anchor-button {
+                    text-decoration: none;
+                        
+                    .price-some-button {
+                        @include button;
+                        padding: 10px 33px;
+                    }
+                    .price-some-button:hover {
+                        background: #62497c;
+                        color: #ffffff;
+                    }   
+                }
+            }
+        } 
+    }
+}
+
+//footer
+.footer {
+    text-align: center;
+
+    .footer-contet {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+
+        .footer-list {
+            list-style: none;
+            text-decoration: none;
+
+            .footer-social-item {
+
+                .social-link {
+
+                }
+            }
+
+            .footer-h-item {
+
+            }
+            
+            .footer-p-item {
+
+                .footer-link {
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+
+
+   
+
+          
+    
