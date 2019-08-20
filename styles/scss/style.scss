@@ -69,6 +69,7 @@ html,body {
 }
 
 .logo { 
+
     .logo-text {
         @include font-mon;
         color: white;
@@ -79,6 +80,7 @@ html,body {
 
 .nav-bar {
     padding-top: 10px;
+
     .items-nav-bar {
         @include font-mon;
         display: inline-block;
@@ -337,6 +339,81 @@ html,body {
     }
 }
 
+//zippy-team
+.zippy-team {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    text-align: center;
+    grid-gap: 30px;
+    margin-bottom: 100px;
+
+    h1 {
+        @include font-mon;
+        font-size: 44.21px;
+        grid-column: 1/6;
+        padding: 80px 0 45px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .zippy-team-top {
+        grid-column: 2/5;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-auto-rows: minmax(100px, auto);
+        @include font-mon;
+        text-transform: uppercase;
+
+        p {
+            @include font-mon;
+            font-size: 14.74px;
+            font-weight: lighter;
+            color: #bababa;  
+        }
+
+        .zippy-team-item {
+            line-height: 30px;
+            
+            .zippy-team-link {
+
+                .zipy-team-img {
+                    // background: rgba(107, 88, 130, 0.2);
+                }
+            }
+        }
+    }
+
+    .zippy-team-bottom {
+        grid-column: 2/5;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-auto-rows: minmax(100px, auto);
+        @include font-mon;
+        text-transform: uppercase;
+
+        p {
+            @include font-mon;
+            font-size: 14.74px;
+            font-weight: lighter;
+            color: #bababa;  
+        }
+
+        .zippy-team-item {
+            line-height: 30px;
+
+            .zippy-team-link {
+
+                .zipy-team-img:hover {
+
+                    
+                }
+            }
+        }
+    }
+}
+
 //footer
 .footer {
     display: grid;
@@ -370,7 +447,7 @@ html,body {
                 }
 
                 .social-link > svg:hover {
-                    fill: #62497c;
+                    fill: #00ffff;
                 }
             }
 

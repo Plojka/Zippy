@@ -241,6 +241,55 @@ html, body {
     grid-column-gap: 35px;
     margin-top: 40px; }
 
+.zippy-team {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  text-align: center;
+  grid-gap: 30px;
+  margin-bottom: 100px; }
+  .zippy-team h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 44.21px;
+    grid-column: 1/6;
+    padding: 80px 0 45px; }
+  .zippy-team a {
+    text-decoration: none; }
+  .zippy-team .zippy-team-top {
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: minmax(100px, auto);
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase; }
+    .zippy-team .zippy-team-top p {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 14.74px;
+      font-weight: lighter;
+      color: #bababa; }
+    .zippy-team .zippy-team-top .zippy-team-item {
+      line-height: 30px; }
+      .zippy-team .zippy-team-top .zippy-team-item .zippy-team-link .zipy-team-img {
+        background: rgba(107, 88, 130, 0.2); }
+  .zippy-team .zippy-team-bottom {
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: minmax(100px, auto);
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase; }
+    .zippy-team .zippy-team-bottom p {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 14.74px;
+      font-weight: lighter;
+      color: #bababa; }
+    .zippy-team .zippy-team-bottom .zippy-team-item {
+      line-height: 30px; }
+
 .footer {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -265,7 +314,7 @@ html, body {
           height: 16px;
           width: 16px; }
         .footer .footer-contet .footer-list .footer-social-item .social-link > svg:hover {
-          fill: #62497c; }
+          fill: #00ffff; }
       .footer .footer-contet .footer-list .footer-h-item {
         font-family: "Montserrat", sans-serif;
         font-weight: bold;
