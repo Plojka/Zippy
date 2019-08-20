@@ -271,8 +271,6 @@ html, body {
       color: #bababa; }
     .zippy-team .zippy-team-top .zippy-team-item {
       line-height: 30px; }
-      .zippy-team .zippy-team-top .zippy-team-item .zippy-team-link .zipy-team-img {
-        background: rgba(107, 88, 130, 0.2); }
   .zippy-team .zippy-team-bottom {
     grid-column: 2/5;
     display: grid;
