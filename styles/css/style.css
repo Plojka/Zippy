@@ -288,6 +288,35 @@ html, body {
     .zippy-team .zippy-team-bottom .zippy-team-item {
       line-height: 30px; }
 
+.life-zippy {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  text-align: center;
+  background: #efefef; }
+  .life-zippy h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 44.21px;
+    grid-column: 1/6;
+    padding: 80px 0 45px; }
+  .life-zippy .life-zippy-slideshow {
+    grid-column: 1/6;
+    margin: auto; }
+    .life-zippy .life-zippy-slideshow .life-zippy-image {
+      max-width: 95%; }
+    .life-zippy .life-zippy-slideshow .life-zippy-arrow-link {
+      background: #000; }
+    .life-zippy .life-zippy-slideshow .life-zippy-arrow-link:hover {
+      background: #fff; }
+    .life-zippy .life-zippy-slideshow .life-zippy-slideshow-thumb {
+      grid-column: 1/6;
+      grid-row: 2/4;
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      grid-column-gap: 1%;
+      list-style: none;
+      margin-top: 15px; }
+
 .footer {
   display: grid;
   grid-template-columns: repeat(4, auto);
