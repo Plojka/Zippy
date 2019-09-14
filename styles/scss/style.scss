@@ -29,6 +29,7 @@
     border-radius: 5px;
     color: #000000;
     padding: 15px 25px;
+    border: none;
 }
 
 @mixin button-project {
@@ -56,7 +57,7 @@ html,body {
     grid-template-columns: repeat(1, auto);
     grid-auto-rows: minmax(100px, auto);
     background: url("../scss/head.jpg") no-repeat;
-    background-size: cover; 
+    background-size: 100% 100%; 
     height: 693px;
     justify-items: center;
 }
@@ -401,6 +402,7 @@ html,body {
     }
 }
 
+//life-zippy
 .life-zippy {
     display: grid;
     grid-template-columns: repeat(1, auto);
@@ -444,6 +446,57 @@ html,body {
         }
     }
 }
+
+
+//newsletter-signup
+.newsletter-signup {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    text-align: center;
+    background: url("../scss/newsletter.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 330px;
+
+    p {
+        @include font-mon;
+        color: #fff;
+        font-size: 44.21px; 
+        margin-top: 58px; 
+    }
+
+    .email-newsletter-signup {
+        width: 40%;
+        height: 57px;
+        position: relative;
+        @include font-mon;
+        font-weight: lighter;
+        font-size: 19.16px;
+        padding-left: 15px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .email-newsletter-signup::placeholder {
+        color: #d8d8d8;
+    } 
+
+    .ancor-email-newsletter-signup {
+        text-decoration: none;
+    }
+    .submit-newsletter-signup {
+        @include button;
+        position: absolute;
+        left: 64.8%;
+        height: 57px;
+        border: none;
+        border-radius: 0 5px 5px 0;
+    }
+    .submit-newsletter-signup:hover {
+        background: #62497c;
+        color: #ffffff;
+    }
+}
+
 
 //footer
 .footer {
