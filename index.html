@@ -403,11 +403,6 @@
                 <img src="images/life_in_zippy/image1.jpg" alt="image1" class="life-zippy-image">
             </div>
             <ul class="life-zippy-slideshow-thumb">
-                <!-- <li class="life-zippy-slideshow-thumb-items">
-                    <a href="#" class="life-zippy-arrow-link">
-                        <img src="images/life_in_zippy/left_arrow.png" alt="left_arrow" class="life-zippy-arrow">
-                    </a>
-                </li> -->
                 <li class="life-zippy-slideshow-thumb-items">
                     <a href="#" class="life-zippy-slideshow-thumb-link">
                         <img src="images/life_in_zippy/image2.jpg" alt="image2" class="life-zippy-image">
@@ -433,19 +428,14 @@
                         <img src="images/life_in_zippy/image6.jpg" alt="image6" class="life-zippy-image">
                     </a>
                 </li>
-                <!-- <li class="life-zippy-slideshow-thumb-items">
-                    <a href="#" class="life-zippy-arrow-link">
-                        <img src="images/life_in_zippy/right_arrow.png" alt="image2" class="life-zippy-arrow">
-                    </a>
-                </li> -->
             </ul>
         </div>
     </div>
 
     <div class="newsletter-signup">
         <p>Newsletter Signup</p>
-        <form action="#" target="_blank" method="GET" class="form-newsletter-signup">
-            <input type="email" placeholder="abc@example.com" class="email-newsletter-signup">
+        <form action="#" target="_blank" method="GET" name="myForm" onsubmit="return validateForm()" class="form-newsletter-signup">
+            <input type="email" placeholder="abc@example.com" name="fname" class="email-newsletter-signup">
             <input type="submit" value="sing up" class="submit-newsletter-signup">
         </form>
     </div>
@@ -783,5 +773,6 @@
             </ul>
         </div>
     </footer>
+    <script src="script/main.js"></script>
 </body>
 </html>

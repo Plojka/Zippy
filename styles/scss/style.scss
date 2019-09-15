@@ -342,16 +342,12 @@ html,body {
 
 //zippy-team
 .zippy-team {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
     text-align: center;
-    grid-gap: 30px;
     margin-bottom: 100px;
 
     h1 {
         @include font-mon;
         font-size: 44.21px;
-        grid-column: 1/6;
         padding: 80px 0 45px;
     }
 
@@ -360,12 +356,11 @@ html,body {
     }
 
     .zippy-team-top {
-        grid-column: 2/5;
         display: grid;
         grid-template-columns: repeat(3, auto);
-        grid-auto-rows: minmax(100px, auto);
         @include font-mon;
         text-transform: uppercase;
+        margin-bottom: 60px;
 
         p {
             @include font-mon;
@@ -381,10 +376,8 @@ html,body {
     }
 
     .zippy-team-bottom {
-        grid-column: 2/5;
         display: grid;
         grid-template-columns: repeat(3, auto);
-        grid-auto-rows: minmax(100px, auto);
         @include font-mon;
         text-transform: uppercase;
 
@@ -447,7 +440,6 @@ html,body {
     }
 }
 
-
 //newsletter-signup
 .newsletter-signup {
     display: grid;
@@ -496,7 +488,6 @@ html,body {
         color: #ffffff;
     }
 }
-
 
 //footer
 .footer {
