@@ -28,15 +28,8 @@
     background: #ffe26d;
     border-radius: 5px;
     color: #000000;
-    padding: 15px 25px;
+    padding: 4% 5%;
     border: none;
-}
-
-@mixin button-project {
-    background: #ffffff;
-    border-radius: 5px;
-    color: #000000;
-    padding: 15px 25px;
 }
 
 // document
@@ -241,7 +234,7 @@ html,body {
                         text-decoration: none;
 
                         .button-couple-project {
-                            @include button-project;
+                            @include button;
                             @include font-mon;
                             font-size: 10.32px;
                         }
@@ -477,6 +470,7 @@ html,body {
     }
     .submit-newsletter-signup {
         @include button;
+        padding: 0 2%;
         position: absolute;
         left: 64.8%;
         height: 57px;
@@ -486,6 +480,67 @@ html,body {
     .submit-newsletter-signup:hover {
         background: #62497c;
         color: #ffffff;
+    }
+}
+
+//blog
+.blog {
+    text-align: center;
+    width: 100%;
+
+    .p-blog {
+        @include font-mon;
+        font-size: 44.21px;
+        margin: 70px 0 50px;
+    }
+
+    .box-blog {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        margin-bottom: 85px;
+        // justify-content: center;
+
+        .left {
+            justify-self: right;
+        }
+
+        .center {
+            justify-self: center;
+        }
+
+        .right {
+            justify-self: left;
+        }
+
+        a {
+        text-decoration: none;
+        }
+
+        h4 {
+            @include font-mon;
+            font-size: 14.26px;
+            text-transform: uppercase;
+        }
+
+        h5 {
+            color: #b9b9b9;
+        }
+
+        p {
+            @include font-rob;
+            font-size: 13.26px;
+            line-height: 23.58px;
+            margin-bottom: 30px;
+        }
+
+        .button-blog {
+            @include button;
+            background: #ececec;
+        }
+
+        .button-blog:hover {
+            background: #ffe26d;
+        }
     }
 }
 
@@ -547,6 +602,16 @@ html,body {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .box-blog {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .image-left, .image-center, .image-right {
+        width: 95%;
+    }
+}
 
 
    

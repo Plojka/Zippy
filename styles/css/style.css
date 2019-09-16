@@ -64,7 +64,7 @@ html, body {
     background: #ffe26d;
     border-radius: 5px;
     color: #000000;
-    padding: 15px 25px;
+    padding: 4% 5%;
     border: none; }
   .button .button-list .button-couple:hover {
     background: #62497c;
@@ -166,10 +166,11 @@ html, body {
         .project .project-item .project-iamges .text-project .button-project .button-list-project {
           text-decoration: none; }
           .project .project-item .project-iamges .text-project .button-project .button-list-project .button-couple-project {
-            background: #ffffff;
+            background: #ffe26d;
             border-radius: 5px;
             color: #000000;
-            padding: 15px 25px;
+            padding: 4% 5%;
+            border: none;
             font-family: "Montserrat", sans-serif;
             font-weight: bold;
             font-size: 10.32px; }
@@ -215,7 +216,7 @@ html, body {
           background: #ffe26d;
           border-radius: 5px;
           color: #000000;
-          padding: 15px 25px;
+          padding: 4% 5%;
           border: none;
           padding: 10px 33px; }
         .pricing-table .price .standard-box .standard-button .standard-anchor-button .price-some-button:hover {
@@ -344,8 +345,9 @@ html, body {
     background: #ffe26d;
     border-radius: 5px;
     color: #000000;
-    padding: 15px 25px;
+    padding: 4% 5%;
     border: none;
+    padding: 0 2%;
     position: absolute;
     left: 64.8%;
     height: 57px;
@@ -354,6 +356,49 @@ html, body {
   .newsletter-signup .submit-newsletter-signup:hover {
     background: #62497c;
     color: #ffffff; }
+
+.blog {
+  text-align: center;
+  width: 100%; }
+  .blog .p-blog {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 44.21px;
+    margin: 70px 0 50px; }
+  .blog .box-blog {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-bottom: 85px; }
+    .blog .box-blog .left {
+      justify-self: right; }
+    .blog .box-blog .center {
+      justify-self: center; }
+    .blog .box-blog .right {
+      justify-self: left; }
+    .blog .box-blog a {
+      text-decoration: none; }
+    .blog .box-blog h4 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 14.26px;
+      text-transform: uppercase; }
+    .blog .box-blog h5 {
+      color: #b9b9b9; }
+    .blog .box-blog p {
+      font-family: "Roboto", sans-serif;
+      font-weight: lighter;
+      font-size: 13.26px;
+      line-height: 23.58px;
+      margin-bottom: 30px; }
+    .blog .box-blog .button-blog {
+      background: #ffe26d;
+      border-radius: 5px;
+      color: #000000;
+      padding: 4% 5%;
+      border: none;
+      background: #ececec; }
+    .blog .box-blog .button-blog:hover {
+      background: #ffe26d; }
 
 .footer {
   display: grid;
@@ -393,5 +438,12 @@ html, body {
         .footer .footer-contet .footer-list .footer-p-item .footer-link {
           text-decoration: none;
           color: #000; }
+
+@media screen and (max-width: 800px) {
+  .box-blog {
+    width: 100%; } }
+@media screen and (max-width: 800px) {
+  .image-left, .image-center, .image-right {
+    width: 95%; } }
 
 /*# sourceMappingURL=style.css.map */
