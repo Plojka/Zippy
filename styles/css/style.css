@@ -400,6 +400,36 @@ html, body {
     .blog .box-blog .button-blog:hover {
       background: #ffe26d; }
 
+.map {
+  display: grid;
+  grid-template-columns: repeat(2, 50%); }
+  .map #googleMap {
+    height: 655px;
+    width: 100%; }
+  .map .box-date {
+    width: 100%;
+    background: #ffe26d; }
+    .map .box-date p {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 44.21px;
+      margin: 50px 0 0 45px; }
+    .map .box-date .form-map {
+      text-transform: uppercase;
+      display: grid;
+      width: 300px;
+      margin-left: 45px; }
+    .map .box-date input {
+      height: 45px; }
+    .map .box-date .message {
+      height: 145px; }
+    .map .box-date .submit-date {
+      border: none;
+      background: #62497c;
+      color: #fff;
+      padding: 0;
+      height: 40px; }
+
 .footer {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -445,5 +475,8 @@ html, body {
 @media screen and (max-width: 800px) {
   .image-left, .image-center, .image-right {
     width: 95%; } }
+@media screen and (max-width: 800px) {
+  .form-map, .box-date {
+    width: 90%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -498,7 +498,6 @@ html,body {
         display: grid;
         grid-template-columns: repeat(3, auto);
         margin-bottom: 85px;
-        // justify-content: center;
 
         .left {
             justify-self: right;
@@ -542,6 +541,51 @@ html,body {
             background: #ffe26d;
         }
     }
+}
+
+//map
+.map {
+   display: grid;
+   grid-template-columns: repeat(2, 50%);
+   
+   #googleMap {
+       height:655px;
+       width: 100%;
+   }
+
+   .box-date {
+       width: 100%;
+       background: #ffe26d;
+
+       p {
+        @include font-mon;
+        font-size: 44.21px;
+        margin: 50px 0 0 45px;
+       }
+
+       .form-map {
+            text-transform: uppercase;
+            display: grid;
+            width: 300px;
+            margin-left: 45px;
+       }
+
+       input {
+           height: 45px;
+       }
+
+       .message {
+           height: 145px;
+       }
+
+       .submit-date {
+            border: none;
+            background: #62497c;
+            color: #fff;
+            padding: 0;
+            height: 40px;
+       }
+   }
 }
 
 //footer
@@ -602,6 +646,7 @@ html,body {
     }
 }
 
+//media-newsletter-signup
 @media screen and (max-width: 800px) {
     .box-blog {
         width: 100%;
@@ -613,7 +658,12 @@ html,body {
     }
 }
 
-
+//media-map
+@media screen and (max-width: 800px) {
+    .form-map, .box-date {
+        width: 90%;
+    }
+}
    
 
           
