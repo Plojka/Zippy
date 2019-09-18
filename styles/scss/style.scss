@@ -28,8 +28,9 @@
     background: #ffe26d;
     border-radius: 5px;
     color: #000000;
-    padding: 4% 5%;
+    padding: 1vw 2vw;
     border: none;
+    line-height: 9vw;
 }
 
 // document
@@ -58,8 +59,7 @@ html,body {
 .content {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-auto-rows: minmax(100px, auto);
-    padding-top: 35px;
+    padding: 3vw 0 0 4vw;
 }
 
 .logo { 
@@ -566,7 +566,7 @@ html,body {
        .form-map {
             text-transform: uppercase;
             display: grid;
-            width: 300px;
+            grid-template-columns: repeat(1, 40%);
             margin-left: 45px;
        }
 
@@ -661,7 +661,7 @@ html,body {
 //media-map
 @media screen and (max-width: 800px) {
     .form-map, .box-date {
-        width: 90%;
+        width: 150%;
     }
 }
    
